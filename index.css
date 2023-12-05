@@ -52,21 +52,51 @@
     margin-right: 190px;
 }
 
-.home{
+/* .home{
     background-color: rgb(50,55,84);
+    background-image:
+    linear-gradient(
+        rgb(50,55,84), rgb(139, 147, 192)
+    );
     display: flex;
     justify-content: space-around;
-    border-bottom: 3px solid rgb(70,79,122);
+} */
+
+.home {
+    background-color: rgb(50,55,84);
+    background-image: linear-gradient(to bottom, rgb(50,55,84) 0%, rgb(102, 110, 150) 90%, rgb(129, 138, 189) 100%);
+    display: flex;
+    justify-content: space-around;
 }
 
+
 .first{
-    margin-top: 160px;
+    margin-top: 120px;
     margin-left: 180px;
     width: 50%;
+    margin-bottom: 80px;
+}
+
+.second{
+    margin-top: 120px;
+    margin-right: 180px;
+    width: 40%;
+}
+
+.first-img{
+    width: 400px;
+    height: 500px;
+    object-fit: cover
+}
+
+.first-img1{
+    width: 800px;
+    object-fit: cover;
 }
 
 .middle1{
     background-color: rgb(50,55,84);
+    background-image: linear-gradient(to bottom, rgb(70,79,118) 0%, rgb(87, 92, 118) 80%, rgb(139, 147, 192) 100%); 
 }
 
 .mid{
@@ -85,3 +115,61 @@
     /* width: 510px; */
     /* margin-left: 500px; */
 }
+
+.middle2{
+    /* position: relative;
+    top: -150px; */
+    background-color: rgb(50,55,84);
+    background-image: linear-gradient(to bottom, rgb(70,79,118) 0%, rgb(87, 92, 118) 80%, rgb(139, 147, 192) 100%); 
+}
+
+.arrow{
+    height: 50px;
+}
+
+.ima{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.next{
+    background-color: rgb(50,55,84);
+    background-image: linear-gradient(to bottom, rgb(70,79,118) 0%, rgb(87, 92, 118) 80%, rgb(139, 147, 192) 100%);
+    height: 40px;
+    
+}
+
+/* Your existing CSS styles */
+
+/* Media query for screens smaller than 768px width */
+@media (max-width: 768px) {
+    /* Header styles for smaller screens */
+    .header {
+      width: 100%;
+      justify-content: center;
+      margin-left: 0;
+    }
+  
+    .circle-container {
+      justify-content: center;
+    }
+  
+    .circle {
+      /* Adjust circle styles for smaller screens if needed */
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar {
+      display: none;
+      /* Modify or adjust navbar styles for smaller screens */
+    }
+  
+    /* Additional responsive styles for other sections if needed */
+  }
+  
